@@ -11,6 +11,7 @@ li {
 li a {
     color: white;
     text-decoration: none;
+    width: 50%;
 }
 
 body {
