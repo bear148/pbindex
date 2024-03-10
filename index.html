@@ -12,8 +12,9 @@
     <body>
         <hgroup>
             <h1>Micbear's Premium Bowling Texture Index</h1>
-            <p>These textures are not made by me. They are taken from the <a href="https://discord.gg/ABeG9ktkSm">Premium Bowling Discord</a> and put here to make it easier to access and find them. <b>If you would like to suggest more textures to add please message me on discord and I will add the texture as soon as possible. Also, be weary I will regularly be adding textures when new ones are created in the <code>#custom-balls</code> channel in the <a href="https://discord.gg/ABeG9ktkSm">Premium Bowling Discord</a>.</b></b></p>
+            <p>These textures are not made by me. They are taken from the <a id="hLink" href="https://discord.gg/ABeG9ktkSm">Premium Bowling Discord</a> and put here to make it easier to access and find them. <b>If you would like to suggest more textures to add please message me on discord and I will add the texture as soon as possible. Also, be weary I will regularly be adding textures when new ones are created in the <code>#custom-balls</code> channel in the <a id="hLink" href="https://discord.gg/ABeG9ktkSm">Premium Bowling Discord</a>.</b></b></p>
             <h2>There are currently: <span id="count" style="color:chartreuse"></span> textures hosted.</h2>
+            <h3><a id="hLink" href="hookandlength.html">How to get the <b>Hook</b> and <b>Length</b> numbers for bowling balls that do not have them in the serial number.</a></h3>
         </hgroup>
         <input type="text" id="search" onkeyup="searchForTexture()" placeholder="Search for a bowling ball..." title="Type a bowling ball name">
 
@@ -256,7 +257,8 @@
 
         <!--Define scripts, hi premium bowling community :D-->
         <script>
-            document.getElementById("count").innerHTML = document.getElementById("bowlingBalls").getElementsByTagName("li").length;
+            document.getElementById("count").innerHTML = document.getElementById("bowlingBalls").getElementsByTagName("li").length + 1;
+
 
             function searchForTexture() {
                 var input, filter, main, imgs, a, txt;
@@ -277,5 +279,6 @@
                 }
             }
         </script>
+        <script src="load.js"></script>
     </body>
 </html>

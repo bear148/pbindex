@@ -24,3 +24,23 @@ body {
     width: 50%;
     height: 50%;
 }
+
+#hLink:link {
+    color: lightskyblue;
+}
+
+#hLink:visited {
+    color: lightskyblue;
+}
+
+#hLink:hover {
+    color: skyblue;
+}
+
+#hLink:active {
+    color: blue;
+}
+
+#helpImg {
+    width: 35%;
+}
